@@ -13,6 +13,7 @@ with st.sidebar:
     Passionate about IT and automation.
     """)
     st.write("📧 [Email me](mailto:zamgeorges0@gmail.com)")
+    st.write("💼 [GitHub](https://github.com/GeorgesZam)")
 
 # Page title
 st.title("Georges Zamfiroiu - Computer Engineering Student")
@@ -65,6 +66,16 @@ st.write("""
 - 🗄️ Database design and management
 - 🖧 System and network configuration and administration
 - 🤖 Artificial intelligence and machine learning projects
+""")
+
+# GitHub Projects section
+st.header("GitHub Projects")
+st.write("Check out some of my projects on GitHub:")
+st.write("[My GitHub Repository](https://github.com/GeorgesZam)")
+st.write("""
+- [Project 1](https://github.com/GeorgesZam/Project1): Brief description of Project 1.
+- [Project 2](https://github.com/GeorgesZam/Project2): Brief description of Project 2.
+- [Project 3](https://github.com/GeorgesZam/Project3): Brief description of Project 3.
 """)
 
 # Contact section with a form
