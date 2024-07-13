@@ -1,14 +1,10 @@
 import streamlit as st
-from PIL import Image
 
 # Set the page layout
 st.set_page_config(layout="wide", page_title="Georges Zamfiroiu - Computer Engineering Student")
 
-# Sidebar with profile picture and brief introduction
+# Sidebar with brief introduction
 with st.sidebar:
-    # Load your profile image from the correct path
-    profile_img = Image.open("toto.png")  # Path to the uploaded image in the same directory as the script
-    st.image(profile_img, caption="Georges Zamfiroiu", width=150)
     st.write("""
     ## Georges Zamfiroiu
     Computer Engineering Student at CESI Nanterre
@@ -49,9 +45,6 @@ st.header("Certifications")
 st.write("""
 - **Fusion 360 Certification**: Certified in using Fusion 360 for 3D CAD, CAM, and CAE.
 """)
-fusion_img_url = "https://via.placeholder.com/200x100"  # replace with an actual image URL if available
-fusion_img = Image.open(BytesIO(requests.get(fusion_img_url).content))
-st.image(fusion_img, caption="Fusion 360 Certification", width=200)
 
 # Why Choose Me section with icons
 st.header("Why Choose Me?")
@@ -96,3 +89,4 @@ if submit_button:
 
 # Footer
 st.write("**Contact me today to start our collaboration!**")
+
