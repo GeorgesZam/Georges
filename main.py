@@ -65,19 +65,4 @@ st.write("""
 """)
 
 
-# Contact section with a form
-st.header("Contact Me")
-st.write("I am eager to collaborate with you and contribute to the success of your projects. Feel free to contact me to discuss your specific needs.")
-
-contact_form = st.form(key='contact_form')
-name = contact_form.text_input('Name')
-email = contact_form.text_input('Email')
-message = contact_form.text_area('Message')
-submit_button = contact_form.form_submit_button(label='Send')
-
-if submit_button:
-    st.write(f"Thank you {name}! I will get back to you at {email} soon.")
-
-# Footer
-st.write("**Contact me today to start our collaboration!**")
 
