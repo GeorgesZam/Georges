@@ -84,15 +84,7 @@ st.write("""
 - 🤖 Artificial intelligence and machine learning projects
 """)
 
-# GitHub Projects section
-st.header("GitHub Projects")
-st.write("Check out some of my projects on GitHub:")
-st.write("[My GitHub Repository](https://github.com/GeorgesZam)")
-st.write("""
-- [Project 1](https://github.com/GeorgesZam/Project1): Brief description of Project 1.
-- [Project 2](https://github.com/GeorgesZam/Project2): Brief description of Project 2.
-- [Project 3](https://github.com/GeorgesZam/Project3): Brief description of Project 3.
-""")
+
 
 # Contact section with a form
 st.header("Contact Me")
