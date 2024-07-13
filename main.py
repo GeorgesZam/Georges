@@ -1,12 +1,26 @@
 import streamlit as st
 from PIL import Image
+import requests
+from io import BytesIO
+
+# Function to load images from a URL
+def load_image(url):
+    try:
+        response = requests.get(url)
+        img = Image.open(BytesIO(response.content))
+        return img
+    except:
+        return None
 
 # Set the page layout
 st.set_page_config(layout="wide", page_title="Georges Zamfiroiu - Computer Engineering Student")
 
 # Sidebar with profile picture and brief introduction
 with st.sidebar:
-    st.image("https://via.placeholder.com/150", caption="Georges Zamfiroiu")
+    profile_img_url = "https://avatars.githubusercontent.com/u/your_github_user_id"  # replace with your actual GitHub user ID image link
+    profile_img = load_image(profile_img_url)
+    if profile_img:
+        st.image(profile_img, caption="Georges Zamfiroiu", width=150)
     st.write("""
     ## Georges Zamfiroiu
     Computer Engineering Student at CESI Nanterre
@@ -47,8 +61,10 @@ st.header("Certifications")
 st.write("""
 - **Fusion 360 Certification**: Certified in using Fusion 360 for 3D CAD, CAM, and CAE.
 """)
-fusion_img = Image.open("https://via.placeholder.com/200x100")
-st.image(fusion_img, caption="Fusion 360 Certification")
+fusion_img_url = "https://via.placeholder.com/200x100"  # replace with an actual image URL if available
+fusion_img = load_image(fusion_img_url)
+if fusion_img:
+    st.image(fusion_img, caption="Fusion 360 Certification", width=200)
 
 # Why Choose Me section with icons
 st.header("Why Choose Me?")
@@ -93,7 +109,3 @@ if submit_button:
 
 # Footer
 st.write("**Contact me today to start our collaboration!**")
-
-# Run the Streamlit app
-if __name__ == "__main__":
-    st.write("Page is running. Adjust content as needed.")
