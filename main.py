@@ -9,7 +9,7 @@ st.set_page_config(layout="wide", page_title="Georges Zamfiroiu - Computer Engin
 # Sidebar with profile picture and brief introduction
 with st.sidebar:
     # Load your profile image from the local path
-    profile_img = Image.open("/mnt/data/image.png")  # Adjust this path if necessary
+    profile_img = Image.open("IMG_3228.HEIC")  # Adjust this path if necessary
     st.image(profile_img, caption="Georges Zamfiroiu", width=150)
     st.write("""
     ## Georges Zamfiroiu
