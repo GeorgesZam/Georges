@@ -1,15 +1,13 @@
 import streamlit as st
 from PIL import Image
-import requests
-from io import BytesIO
 
 # Set the page layout
 st.set_page_config(layout="wide", page_title="Georges Zamfiroiu - Computer Engineering Student")
 
 # Sidebar with profile picture and brief introduction
 with st.sidebar:
-    # Load your profile image from the local path
-    profile_img = Image.open("toto.png")  # Adjust this path if necessary
+    # Load your profile image from the correct path
+    profile_img = Image.open("toto.png")  # Path to the uploaded image in the same directory as the script
     st.image(profile_img, caption="Georges Zamfiroiu", width=150)
     st.write("""
     ## Georges Zamfiroiu
@@ -17,7 +15,7 @@ with st.sidebar:
     Passionate about IT and automation.
     """)
     st.write("📧 [Email me](mailto:zamgeorges0@gmail.com)")
-   
+    st.write("💼 [GitHub](https://github.com/GeorgesZam)")
 
 # Page title
 st.title("Georges Zamfiroiu - Computer Engineering Student")
@@ -73,6 +71,15 @@ st.write("""
 - 🤖 Artificial intelligence and machine learning projects
 """)
 
+# GitHub Projects section
+st.header("GitHub Projects")
+st.write("Check out some of my projects on GitHub:")
+st.write("[My GitHub Repository](https://github.com/GeorgesZam)")
+st.write("""
+- [Project 1](https://github.com/GeorgesZam/Project1): Brief description of Project 1.
+- [Project 2](https://github.com/GeorgesZam/Project2): Brief description of Project 2.
+- [Project 3](https://github.com/GeorgesZam/Project3): Brief description of Project 3.
+""")
 
 # Contact section with a form
 st.header("Contact Me")
