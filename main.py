@@ -3,31 +3,21 @@ from PIL import Image
 import requests
 from io import BytesIO
 
-# Function to load images from a URL
-def load_image(url):
-    try:
-        response = requests.get(url)
-        img = Image.open(BytesIO(response.content))
-        return img
-    except:
-        return None
-
 # Set the page layout
 st.set_page_config(layout="wide", page_title="Georges Zamfiroiu - Computer Engineering Student")
 
 # Sidebar with profile picture and brief introduction
 with st.sidebar:
-    profile_img_url = "https://avatars.githubusercontent.com/u/your_github_user_id"  # replace with your actual GitHub user ID image link
-    profile_img = load_image(profile_img_url)
-    if profile_img:
-        st.image(profile_img, caption="Georges Zamfiroiu", width=150)
+    # Load your profile image from the local path
+    profile_img = Image.open("/mnt/data/image.png")  # Adjust this path if necessary
+    st.image(profile_img, caption="Georges Zamfiroiu", width=150)
     st.write("""
     ## Georges Zamfiroiu
     Computer Engineering Student at CESI Nanterre
     Passionate about IT and automation.
     """)
     st.write("📧 [Email me](mailto:zamgeorges0@gmail.com)")
-    st.write("💼 [GitHub](https://github.com/GeorgesZam)")
+   
 
 # Page title
 st.title("Georges Zamfiroiu - Computer Engineering Student")
@@ -62,9 +52,8 @@ st.write("""
 - **Fusion 360 Certification**: Certified in using Fusion 360 for 3D CAD, CAM, and CAE.
 """)
 fusion_img_url = "https://via.placeholder.com/200x100"  # replace with an actual image URL if available
-fusion_img = load_image(fusion_img_url)
-if fusion_img:
-    st.image(fusion_img, caption="Fusion 360 Certification", width=200)
+fusion_img = Image.open(BytesIO(requests.get(fusion_img_url).content))
+st.image(fusion_img, caption="Fusion 360 Certification", width=200)
 
 # Why Choose Me section with icons
 st.header("Why Choose Me?")
@@ -83,7 +72,6 @@ st.write("""
 - 🖧 System and network configuration and administration
 - 🤖 Artificial intelligence and machine learning projects
 """)
-
 
 
 # Contact section with a form
