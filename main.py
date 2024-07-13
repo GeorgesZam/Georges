@@ -49,7 +49,7 @@ st.header("Contact Me")
 st.write("""
 I am eager to collaborate with you and contribute to the success of your projects. Feel free to contact me to discuss your specific needs.
 
-**Email:** [your_email@example.com](mailto:your_email@example.com)
+**Email:** [zamgeorges0@gmail.com](mailto:zamgeorges0@gmail.com)
 """)
 
 # Footer
