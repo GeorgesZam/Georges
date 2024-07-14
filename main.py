@@ -11,7 +11,7 @@ st.set_page_config(
 # Ajout de la balise HTML pour la vérification Google
 st.markdown("""
 <head>
-    <meta name="google-site-verification" content="PXT10Ykx5Xmkwq0sbBpDsRplXknMCH1-7akU8WXxSyc" />
+   <meta name="google-site-verification" content="PXT10Ykx5Xmkwq0sbBpDsRplXknMCH1-7akU8WXxSyc" />
 </head>
 """, unsafe_allow_html=True)
 
