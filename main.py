@@ -2,28 +2,13 @@ import streamlit as st
 
 # Configuration de la page
 st.set_page_config(
-    page_title="Georges Zam - Professional Automation Services",
+    page_title="Georges Zamfiroiu - Professional Automation Services",
     page_icon="👋",
     layout="wide",
     initial_sidebar_state="expanded"
 )
 
-# Contenu de la page
-st.title("Georges Zamfiroiu - Professional Automation Services")
-st.write("""
-Welcome to my professional automation services page. Here you will find information about the services I offer, including task automation, custom scripts, and database management.
-""")
-
-# Ajoutez le reste de votre contenu ici
-
-# Pied de page
-st.write("Contact me: [zamgeorges0@gmail.com](mailto:zamgeorges0@gmail.com)")
-
-
-# Set the page layout
-st.set_page_config(layout="wide", page_title="Georges Zamfiroiu - Computer Engineering Student")
-
-# Sidebar with brief introduction
+# Sidebar avec brève introduction
 with st.sidebar:
     st.write("""
     ## Georges Zamfiroiu
@@ -31,19 +16,21 @@ with st.sidebar:
     Passionate about IT and automation.
     """)
     st.write("📧 [Email me](mailto:zamgeorges0@gmail.com)")
-   
 
-# Page title
-st.title("Georges Zamfiroiu - Computer Engineering Student")
+# Contenu de la page
+st.title("Georges Zamfiroiu - Professional Automation Services")
+st.write("""
+Welcome to my professional automation services page. Here you will find information about the services I offer, including task automation, custom scripts, and database management.
+""")
 
-# Introduction
+# Section d'introduction
 st.header("Hello! 👋")
 st.write("""
 My name is Georges Zamfiroiu, and I am currently a computer engineering student at CESI Nanterre, one of the most renowned engineering schools in France. 
 Passionate about information technology and always looking for new opportunities to apply my skills, I am here to help you achieve your projects with professionalism and efficiency.
 """)
 
-# Skills section with columns
+# Section des compétences avec des colonnes
 st.header("My Skills")
 col1, col2 = st.columns(2)
 
@@ -60,13 +47,13 @@ with col2:
     - **Artificial Intelligence and Machine Learning**: Development of predictive models and data analysis.
     """)
 
-# Certification section with images
+# Section des certifications
 st.header("Certifications")
 st.write("""
 - **Fusion 360 Certification**: Certified in using Fusion 360 for 3D CAD, CAM, and CAE.
 """)
 
-# Why Choose Me section with icons
+# Section Pourquoi Me Choisir avec des icônes
 st.header("Why Choose Me?")
 st.write("""
 - 🎓 **Quality Education**: Currently pursuing an engineering degree at CESI Nanterre, I have gained a solid theoretical and practical foundation.
@@ -74,7 +61,7 @@ st.write("""
 - 💡 **Innovative Mindset**: Always exploring new technologies and methods to enhance processes and results.
 """)
 
-# Services section with bullet points
+# Section des services offerts avec des points
 st.header("Services I Offer")
 st.write("""
 - 🌐 Website and mobile application development
@@ -84,5 +71,5 @@ st.write("""
 - 🤖 Artificial intelligence and machine learning projects
 """)
 
-
-
+# Pied de page
+st.write("Contact me: [zamgeorges0@gmail.com](mailto:zamgeorges0@gmail.com)")
