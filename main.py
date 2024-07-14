@@ -2,11 +2,18 @@ import streamlit as st
 
 # Configuration de la page
 st.set_page_config(
-    page_title="Georges Zamfiroiu - Professional Automation Services",
+    page_title="Georges Zam - Professional Automation Services",
     page_icon="👋",
     layout="wide",
     initial_sidebar_state="expanded"
 )
+
+# Ajout de la balise HTML pour la vérification Google
+st.markdown("""
+<head>
+    <meta name="google-site-verification" content="PXT10Ykx5Xmkwq0sbBpDsRplXknMCH1-7akU8WXxSyc" />
+</head>
+""", unsafe_allow_html=True)
 
 # Sidebar avec brève introduction
 with st.sidebar:
