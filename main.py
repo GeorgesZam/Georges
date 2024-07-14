@@ -1,5 +1,25 @@
 import streamlit as st
 
+# Configuration de la page
+st.set_page_config(
+    page_title="Georges Zam - Professional Automation Services",
+    page_icon="👋",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
+
+# Contenu de la page
+st.title("Georges Zamfiroiu - Professional Automation Services")
+st.write("""
+Welcome to my professional automation services page. Here you will find information about the services I offer, including task automation, custom scripts, and database management.
+""")
+
+# Ajoutez le reste de votre contenu ici
+
+# Pied de page
+st.write("Contact me: [zamgeorges0@gmail.com](mailto:zamgeorges0@gmail.com)")
+
+
 # Set the page layout
 st.set_page_config(layout="wide", page_title="Georges Zamfiroiu - Computer Engineering Student")
 
