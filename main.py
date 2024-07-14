@@ -12,7 +12,7 @@ st.set_page_config(
 st.markdown("""
 <head>
    <meta name="google-site-verification" content="PXT10Ykx5Xmkwq0sbBpDsRplXknMCH1-7akU8WXxSyc" />
-</head>
+   </head>
 """, unsafe_allow_html=True)
 
 # Sidebar avec brève introduction
